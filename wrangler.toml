@@ -1,0 +1,8 @@
+name = "teswatch-relay"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# id를 적지 않으면 배포 시 Cloudflare가 이 이름(STORE)의 KV 네임스페이스를
+# 자동으로 새로 만들어서 연결해준다 (wrangler 4.45.0 이상 / Deploy 버튼 기준).
+[[kv_namespaces]]
+binding = "STORE"
